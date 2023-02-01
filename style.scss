@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Mukta:wght@200;300;400;500;600;700;800&display=swap');
+
+@import './node_modules/bootstrap-icons/font/bootstrap-icons.css';
+
+$primary:#007822;
+
+$font-family-sans-serif:'Mukta', sans-serif;
+$navbar-nav-link-padding-x:1.5rem;
+
+$border-radius:1rem;
+$border-radius-lg:1rem;
+
+$btn-padding-x:1.3rem;
+$btn-padding-y:.5rem;
+
+$btn-padding-x-lg:1.8rem;
+$btn-font-size:1rem;
+$btn-padding-y-lg:.8rem;
+
+@import './node_modules/bootstrap/scss/bootstrap.scss';
+
+.navbar-icon{
+  width: 30px;
+  transition: 1s;
+}
+
+.nav-link.active{
+  transition:.3s;
+}
+
+.site-navbar{
+  &:hover .navbar-icon{
+    transform: rotate(360deg);
+  }
+  &:hover .nav-link.active{
+    transform: translateY(-3px);
+  }
+  
+}
+
+.nav-link.active{
+  color: white !important;
+}
+
+svg{
+  fill:$primary;
+}
+
+.plate-card{
+  transition: 0.3s;
+  img{
+    transition: 0.3s;
+  }
+  &:hover{
+    transform: translateY(-5px);
+    box-shadow: $box-shadow;
+  }
+  &:hover img{
+    transform: rotate(20deg);
+  }
+}
